@@ -1,14 +1,25 @@
 package com.example.java_demo_web.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Created by Anthony on 10/31/17.
  */
+@Entity
 public class Student {
 
-
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
     private int id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "course")
     private String course;
+    @Column(name = "age")
     private int age;
 
     public Student() {
