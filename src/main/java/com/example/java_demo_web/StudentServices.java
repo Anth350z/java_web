@@ -48,4 +48,17 @@ public class StudentServices{
         students.put(key,student);
 
     }
+
+    public String updateStudent(String key, Student student){
+        if(students.containsKey(key)){
+         students.put(key,student);
+         return "Student Updated ";
+        }else {
+            return "Student no found ";
+        }
+    }
+
+    public void deleteStudent(String id){
+        students.remove(id);
+    }
 }
