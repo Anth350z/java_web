@@ -43,4 +43,9 @@ public class StudentServices{
     public Hashtable <String, Student> getAllStudent(){
     return students;
     }
+
+    public void addStudent(String key,Student student){
+        students.put(key,student);
+
+    }
 }
